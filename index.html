@@ -1,218 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The B Side — R&B Lounge</title>
-  <meta name="description" content="The B Side: a 25+ classy R&B lounge with live vibes, signature cocktails, and grown energy." />
-  <style>
-    :root{
-      --bg:#0b0b10;
-      --card:#12121b;
-      --ink:#f3f3f7;
-      --muted:#c7c7d4;
-      --line:#2a2a3a;
-      --accent:#b18cff;   /* velvet purple */
-      --accent2:#ffcc70;  /* warm gold */
-      --good:#7CFFB2;
-      --shadow: 0 12px 30px rgba(0,0,0,.45);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 700px at 20% 10%, rgba(177,140,255,.14), transparent 60%),
-                  radial-gradient(900px 600px at 80% 30%, rgba(255,204,112,.10), transparent 55%),
-                  var(--bg);
-      color:var(--ink);
-      line-height:1.6;
-    }
-    a{color:var(--accent2); text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{
-      position:sticky; top:0;
-      backdrop-filter: blur(10px);
-      background: rgba(11,11,16,.70);
-      border-bottom:1px solid rgba(255,255,255,.06);
-      z-index:10;
-    }
-    .wrap{max-width:1050px; margin:0 auto; padding:18px 18px;}
-    .nav{
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:800; letter-spacing:.4px;
-    }
-    .logo{
-      width:34px; height:34px; border-radius:10px;
-      background: linear-gradient(135deg, rgba(177,140,255,.95), rgba(255,204,112,.90));
-      box-shadow: var(--shadow);
-    }
-    .navlinks{
-      display:flex; flex-wrap:wrap; gap:12px;
-      font-size:14px;
-    }
-    .navlinks a{
-      padding:8px 10px; border-radius:10px;
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(18,18,27,.55);
-    }
-    .hero{
-      padding:44px 0 18px;
-    }
-    .hero-grid{
-      display:grid; gap:18px;
-      grid-template-columns: 1.25fr .75fr;
-    }
-    @media (max-width: 860px){
-      .hero-grid{grid-template-columns:1fr;}
-    }
-    .card{
-      background: rgba(18,18,27,.80);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:18px;
-      padding:18px;
-      box-shadow: var(--shadow);
-    }
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-size:13px;
-    }
-    h1{
-      margin:12px 0 10px;
-      font-size: clamp(28px, 4vw, 44px);
-      line-height:1.1;
-    }
-    .sub{
-      color:var(--muted);
-      font-size:16px;
-      margin:0 0 12px;
-    }
-    .cta{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;
-    }
-    .btn{
-      display:inline-block;
-      padding:10px 14px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(177,140,255,.18);
-      color:var(--ink);
-      font-weight:700;
-    }
-    .btn.alt{background: rgba(255,204,112,.14)}
-    .btn:hover{filter:brightness(1.08)}
-    .list{margin:0; padding-left:18px; color:var(--muted)}
-    section{padding:18px 0;}
-    h2{margin:0 0 10px; font-size:22px}
-    .grid-2{display:grid; grid-template-columns: 1fr 1fr; gap:16px;}
-    @media (max-width: 860px){.grid-2{grid-template-columns:1fr;}}
-    .quote{
-      border-left:4px solid rgba(177,140,255,.7);
-      padding:12px 14px;
-      background: rgba(255,255,255,.04);
-      border-radius:12px;
-      color:var(--muted);
-      margin:12px 0 0;
-    }
-    .small{font-size:13px; color:var(--muted)}
-    footer{
-      padding:26px 0 34px;
-      border-top:1px solid rgba(255,255,255,.06);
-      color:var(--muted);
-    }
-    .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:6px 10px;
-      border-radius:999px;
-      background: rgba(124,255,178,.12);
-      border: 1px solid rgba(124,255,178,.25);
-      color: #d9ffe9;
-      font-size:13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The B Side | R&B Lounge</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#0e0e12;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+.hero{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    font-size:1.1rem;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#15151d;
+    padding:40px;
+    border-radius:8px;
+    margin-bottom:40px;
+}
+
+.testimonial{
+    font-style:italic;
+    border-left:3px solid #c9a34e;
+    padding-left:20px;
+    margin-top:20px;
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    background:#0a0a0d;
+    font-size:0.9rem;
+}
+
+a{
+    color:#c9a34e;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+button{
+    background:#c9a34e;
+    border:none;
+    padding:12px 25px;
+    margin-top:25px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#a88234;
+}
+
+</style>
 </head>
 
 <body>
-  <header>
-    <div class="wrap nav">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>The B Side</div>
-      </div>
-      <nav class="navlinks" aria-label="Primary">
-        <a href="#lead">Lead</a>
-        <a href="#image">Image</a>
-        <a href="#story">Experience</a>
-        <a href="#details">Details</a>
-        <a href="#question">Question</a>
-      </nav>
+
+<div class="hero">
+    <h1>The B Side</h1>
+    <p>A refined 25+ R&B lounge where the lights are low, the crowd is grown, and the music feels personal.</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Discover the Experience</button>
+</div>
+
+<div class="section" id="about">
+    <div class="card">
+        <h2>Lead Paragraph</h2>
+        <p>
+        The B Side is not just a lounge — it’s a return to intentional nightlife. Created for adults 25 and over, our space blends timeless R&B, soft candlelight, curated cocktails, and an atmosphere designed for connection rather than chaos. If you’ve been searching for a night out that feels elevated yet effortless, this is your room.
+        </p>
     </div>
-  </header>
 
-  <main class="wrap">
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-grid">
-        <div class="card">
-          <div class="badge">🎶 25+ • Classy R&B Lounge • “Grown & Smooth”</div>
+    <div class="card">
+        <h2>The Atmosphere</h2>
+        <p>
+        Imagine velvet lighting in deep amber and plum. A small stage framed in gold where live vocalists reinterpret classics. The DJ moves between 90s slow jams and modern neo-soul without missing a beat. Tables are intimate. Conversations flow easily. The dress code is polished — no athletic wear, no chaos, just clean silhouettes and confidence.
+        </p>
+    </div>
 
-          <!-- 1) LEAD PARAGRAPH -->
-          <h1 id="lead">The B Side: where the night slows down and the music speaks.</h1>
-          <p class="sub">
-            A mature R&B lounge with velvet lighting, clean outfits, and a “Natalie’s-type” vibe—smooth, stylish, and a little mysterious.
-          </p>
+    <div class="card">
+        <h2>Founder’s Note</h2>
+        <p>
+        I created The B Side because I wanted a space that respected grown energy. After years of nightlife that felt loud but empty, I envisioned something intentional — a place where music sets the tone and people come to unwind, not compete. Every playlist, lighting decision, and layout choice reflects that vision.
+        </p>
 
-          <div class="cta">
-            <a class="btn" href="#details">See what we offer</a>
-            <a class="btn alt" href="#question">Join the discussion</a>
-          </div>
-
-          <p class="small" style="margin-top:12px;">
-            📍 Fictional business for a school project • Built with GitHub Pages
-          </p>
+        <div class="testimonial">
+        “The B Side feels like a secret you only tell your closest friends about. It’s rare to find a space where you can dress well, hear real R&B, and actually enjoy the night without distraction.” — Danielle M.
         </div>
-
-        <aside class="card">
-          <h2>Tonight’s vibe</h2>
-          <ul class="list">
-            <li>Dim lights + candle tables</li>
-            <li>R&B classics + neo-soul + grown grooves</li>
-            <li>Dress code: “date-night clean”</li>
-            <li>Respectful crowd • 25 and over</li>
-          </ul>
-          <div style="margin-top:14px" class="pill">✔️ Mature • Classy • Safe • Smooth</div>
-        </aside>
-      </div>
     </div>
 
-    <!-- 2) RELEVANT IMAGE -->
-    <section id="image">
-      <div class="card">
-        <h2>Relevant image (described)</h2>
-        <p style="color:var(--muted); margin:0;">
-          Picture a low-lit lounge with deep purple and warm gold lights. There’s a small stage with a microphone,
-          a neon sign that says “The B Side,” and round tables with candles. The bar glows softly behind glass shelves,
-          showing signature cocktails. People are dressed like it’s a grown night out—blazers, clean dresses, fresh shoes.
-          The DJ booth sits off to the side, playing smooth R&B that makes you nod your head without even trying.
+    <div class="card">
+        <h2>What We Offer</h2>
+        <p>
+        Weekly DJ nights featuring curated R&B sets. Bi-weekly live performances spotlighting emerging vocalists. Private table reservations for birthdays and intimate celebrations. Signature cocktail menu inspired by iconic R&B eras. A 25+ policy ensures a mature, respectful crowd. Our goal is simple: atmosphere over hype, quality over noise.
         </p>
-        <p class="small" style="margin-top:10px;">
-          (If you want later, you can replace this description with a real photo you took or a free-to-use image.)
-        </p>
-      </div>
-    </section>
 
-    <!-- 3) PERSONAL EXPERIENCE + TESTIMONIAL -->
-    <section id="story">
-      <div class="grid-2">
-        <div class="card">
-          <h2>Personal experience (me as the entrepreneur)</h2>
-          <p style="color:var(--muted); margin:0;">
-            I created The B Side because I wanted a space for adults who love R&B and want a classy night out without chaos.
-            I’m the owner and creative director
+        <p>
+        Location: 123 Velvet Avenue, Your City<br>
+        Hours: Thursday – Sunday | 8PM – 2AM<br>
+        Email: reservations@thebside.com
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Join the Conversation</h2>
+        <p>
+        If we hosted a “Slow Jam Saturday” dedicated entirely to deep cuts, what’s the one R&B track that absolutely belongs on the playlist — and why?
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+© 2026 The B Side. All Rights Reserved.
+</div>
+
+</body>
+</html>
