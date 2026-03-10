@@ -8,19 +8,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
 body{
     margin:0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
     background-color:#0e0e12;
     color:#f5f5f5;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 .hero{
-    height:100vh;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
-    url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7') center/cover no-repeat;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.82)),
+        url('images/lounge-hero.jpg') center/cover no-repeat;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -29,16 +29,52 @@ body{
     padding:20px;
 }
 
+.hero-content{
+    max-width:800px;
+}
+
 .hero h1{
     font-family:'Playfair Display', serif;
-    font-size:3rem;
+    font-size:3.2rem;
     letter-spacing:2px;
-    margin-bottom:20px;
+    margin-bottom:10px;
+}
+
+.tagline{
+    font-size:1.2rem;
+    color:#d8b76a;
+    margin-bottom:25px;
+    font-weight:600;
 }
 
 .hero p{
-    max-width:600px;
-    font-size:1.1rem;
+    max-width:720px;
+    font-size:1.08rem;
+    margin:0 auto;
+}
+
+button{
+    background:#c9a34e;
+    border:none;
+    padding:12px 25px;
+    margin-top:30px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    border-radius:4px;
+}
+
+button:hover{
+    background:#a88234;
+}
+
+.image-caption{
+    background:#121218;
+    color:#d6d6d6;
+    text-align:center;
+    padding:18px 10%;
+    font-size:0.98rem;
+    border-top:1px solid rgba(201,163,78,0.25);
 }
 
 .section{
@@ -49,13 +85,15 @@ body{
     font-family:'Playfair Display', serif;
     font-size:2rem;
     margin-bottom:20px;
+    color:#f3e6c4;
 }
 
 .card{
     background:#15151d;
     padding:40px;
-    border-radius:8px;
-    margin-bottom:40px;
+    border-radius:10px;
+    margin-bottom:35px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.18);
 }
 
 .testimonial{
@@ -63,13 +101,19 @@ body{
     border-left:3px solid #c9a34e;
     padding-left:20px;
     margin-top:20px;
+    color:#f0ece2;
+}
+
+.contact p{
+    margin:8px 0;
 }
 
 .footer{
     text-align:center;
-    padding:40px;
+    padding:35px;
     background:#0a0a0d;
     font-size:0.9rem;
+    color:#bbb;
 }
 
 a{
@@ -80,81 +124,71 @@ a{
 a:hover{
     text-decoration:underline;
 }
-
-button{
-    background:#c9a34e;
-    border:none;
-    padding:12px 25px;
-    margin-top:25px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#a88234;
-}
-
 </style>
 </head>
 
 <body>
 
 <div class="hero">
-    <h1>The B Side</h1>
-    <p>A refined 25+ R&B lounge where the lights are low, the crowd is grown, and the music feels personal.</p>
-    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Discover the Experience</button>
+    <div class="hero-content">
+        <h1>The B Side</h1>
+        <div class="tagline">A 25+ R&amp;B Lounge Inspired by the Soulful Nights of the 90s</div>
+        <p>
+            The B Side is a 25-and-over R&amp;B lounge inspired by the soulful club scene of the 1990s. Influenced by the iconic vibe of Natalie’s from the television series <em>New York Undercover</em>, The B Side creates a space where music lovers can enjoy classic R&amp;B in a relaxed and stylish environment. Guests can dance, socialize, and enjoy great music without the chaos of typical nightclub scenes. The goal is simple: bring back the atmosphere of real music, real connection, and unforgettable nights.
+        </p>
+        <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Discover the Experience</button>
+    </div>
+</div>
+
+<div class="image-caption">
+    The B Side lounge atmosphere is designed for music lovers who appreciate classic R&amp;B, relaxed conversation, and a sophisticated nightlife experience.
 </div>
 
 <div class="section" id="about">
-    <div class="card">
-        <h2>The B Side — For the Grown Crowd Who Still Loves Real R&B</h2>
-        <p>
-    The B Side is a 25+ R&B lounge inspired by the vibe of Natalie’s in New York Undercover — dim lights, real music, good food, and people who came out dressed like they meant it. No college chaos. No Top 40 playlists. Just grown energy and a room that feels like it knows what it’s doing. </p>
-    </div>
 
     <div class="card">
-        <h2>The Atmosphere</h2>
+        <h2>About the Founder</h2>
         <p>
-        Imagine velvet lighting in deep amber and plum. A small stage framed in gold where live vocalists reinterpret classics. The DJ moves between 90s slow jams and modern neo-soul without missing a beat. Tables are intimate. Conversations flow easily. The dress code is polished — no athletic wear, no chaos, just clean silhouettes and confidence.
+            The B Side was created from a love of classic R&amp;B and the culture that surrounded it. Many nightlife venues today focus on younger crowds and fast-paced music, leaving few places where people who grew up with R&amp;B can truly enjoy the music they love. The B Side was created to bring that experience back. The goal is to create a welcoming environment where people can relax, connect, and celebrate the music that defined an era.
         </p>
     </div>
 
     <div class="card">
-        <h2>Founder’s Note</h2>
+        <h2>The Experience</h2>
         <p>
-        I created The B Side because I got tired of going out and feeling like I was too grown for the room. I still love R&B. I still like to dance. I still want to dress up. But I don’t want sticky floors, overcrowded spaces, or music that switches every 20 seconds. The B Side is the kind of place I was looking for but couldn’t find. </p>
+            The B Side offers a curated nightlife experience focused on classic R&amp;B and mature social environments. Guests can enjoy DJ sets featuring 90s and early 2000s R&amp;B, themed music nights, and occasional live performances. The lounge atmosphere is designed to be comfortable and intimate, allowing guests to dance, enjoy drinks, and still have meaningful conversations. The venue is intended for guests aged 25 and older who want a sophisticated nightlife environment that celebrates music, culture, and connection.
+        </p>
+        <p>
+            The B Side also welcomes collaboration with local DJs, artists, and event organizers who share a passion for R&amp;B culture.
+        </p>
+    </div>
 
+    <div class="card">
+        <h2>Guest Experience</h2>
         <div class="testimonial">
-       “I haven’t heard a room sing along to real R&B like that in years. It felt like stepping into a different era but with better drinks and better food. It wasn’t loud just to be loud. It was intentional.” — Marcus D., Guest</div>
+            “Walking into The B Side feels like stepping back into the golden era of R&amp;B. The music is smooth, the crowd is mature, and the atmosphere is perfect for enjoying great music with friends.”<br>
+            — Marcus L., guest
+        </div>
     </div>
 
-    <div class="card">
-        <h2>What We Offer</h2>
-        <p>
-        The B Side is a 25 and over R&B lounge experience designed for people who still appreciate music with feeling. Our nights focus on 90s R&B, neo soul, slow jams, and curated sets that make sense from start to finish. Some evenings include live vocalists or local bands. Other nights keep it smooth with a DJ who understands timing and flow.
-
-We offer a focused food menu with elevated comfort dishes and cocktails that fit the atmosphere. Dress code is upscale casual. Come clean and put together. No athletic shorts. No slides.
-
-Reservations are encouraged for table seating. </p>
-
-        <p>
-        Location: 123 Velvet Avenue, Tampa<br>
-        Hours: Thursday – Sunday | 7PM – 2AM<br>
-        Email: reservations@thebside.com
-        </p>
+    <div class="card contact">
+        <h2>Contact</h2>
+        <p>Interested in hosting an event or collaborating with The B Side?</p>
+        <p>Email: <a href="mailto:info@thebside.com">info@thebside.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/TheBSideLounge" target="_blank">@TheBSideLounge</a></p>
+        <p>Location: Coming Soon</p>
     </div>
 
     <div class="card">
         <h2>Join the Conversation</h2>
         <p>
-        If we hosted a “Slow Jam Saturday” dedicated entirely to deep cuts, what’s the one R&B track that absolutely belongs on the playlist — and why?
+            What classic R&amp;B song would instantly get you on the dance floor at The B Side?
         </p>
     </div>
 </div>
 
 <div class="footer">
-© 2026 The B Side. All Rights Reserved.
+    © 2026 The B Side. All Rights Reserved.
 </div>
 
 </body>
